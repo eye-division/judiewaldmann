@@ -1,0 +1,360 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* rewrite Foundation, which is well out of date! */
+.row {
+	margin: 10px;
+}
+html { 
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a img { 
+	border: none;
+}
+
+body {
+	font-size:1em;
+}
+a:link { 
+	text-decoration:underline;
+	color:#CCCC99;
+}
+a:visited { 
+	text-decoration:underline;
+	color:#CCCCCC;
+}
+a:hover { 
+	text-decoration:none;
+	color:#FF9933;
+}
+a:active { 
+	text-decoration:none;
+	color:#FF9933;
+}
+#container {
+	margin: 0 auto;
+	max-width: 62.5em;
+	line-height: 130%;
+	padding: 0 1em;
+	background-color: #6D6D6D;
+	color: #FFF;
+}
+/* nav top left */
+#nav {
+	float: left;
+	/*width: 410px;
+	display: block;*/
+	padding: 10px;
+}
+#nav a {
+	font-weight:bold;
+	font-size:1.1em;
+}
+#nav a:link, #nav a:visited, #nav a:hover, #nav a:active { 
+	text-decoration:none;
+
+}
+/* navigation menu */
+#topNav { 
+	clear: both;
+	padding: 10px 0;
+	padding: 1.5em 0;
+	text-align: center;
+	font-size: 0.9em;
+}
+#topNav ul, #bottomNav ul { display:inline; padding-left:0; }
+#topNav ul li, #bottomNav ul li { display:inline; padding:0 0.5em 0 0; margin:0 0.5em; border-right:1px solid #999; }
+#topNav a.current, #bottomNav a.current { color:#fff; }
+
+/* styled header logo */
+/*#
+header {
+	width: 900px;
+	height: 79px; 
+	background-color: #6D6D6D; 
+	color: #FFF;
+	padding: 0;
+	margin: 0 auto;
+}
+#logo {
+	width: 900px;
+	height:79px;
+	margin: 0 auto;
+	padding:0px;
+}
+*/
+/*
+h1 a {
+	text-indent: -9999px;
+	border: none;
+	display: block;	
+	height: 79px;
+	padding: 0;
+	background: transparent url("/images/header_f01.gif") no-repeat right top;
+}
+h1 a:hover {
+	background: transparent url("/images/header_f02.gif") no-repeat right top;
+	text-decoration: none;
+}
+*/
+#logo a:link, #logo a:visited, #logo a:hover, #logo a:active {
+	border: none;
+}
+#header {
+
+}
+h1 {
+	margin-bottom: 5px;
+	margin-bottom: 0.5em;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+h1 a, h1 a:link, h1 a:visited {
+	color: white;
+	text-decoration: none;
+}
+.tagline {
+	font-size: 15px;
+	font-size: 1.5em;
+
+}
+/* end header */
+
+/* general styles */
+h3 {
+	font-weight: normal;
+	font-size:1.2em;
+	color:#FFF;
+}
+h3 a, h3 a:link , h3 a:visited {
+	text-decoration: none;
+	color: #ccc;
+	/* border-bottom:dashed 1px white;*/
+}
+h3 a:hover {
+	color: white;
+}
+b, strong, em {
+	font-weight: bold;
+	color: #fff;
+}
+
+/* page specific styles */
+
+#oneCol, #twoCol {
+	font-size:0.9em;
+	width:100%;
+	color:#FFF;
+	margin:10px auto;
+	text-align:left;
+
+}
+
+.imageRowLeft {
+	text-align:left;
+	clear:both;
+	padding-right:25px;
+	text-align:justify;
+	min-height:300px;
+}
+.image300 {
+	float:left;
+	width:300px;
+	text-align:right;
+	padding:5px 20px 20px 5px;
+}
+.image320 {
+	float:left;
+	width:320px;
+}
+
+.gallery {
+	margin-bottom: 1em;
+	text-align: center;
+	font-size: 0.8em;
+}
+/* large image display page with thumbnails underneath */
+.alignLeft {
+	float:left;
+}
+.alignright {
+	float: right;
+	margin-left: 1em;
+}
+.center {
+	text-align: center;
+}
+#centerImage {
+	text-align:center;
+	padding:20px;
+	min-height:600px;
+}
+#centerImageIndex {
+	text-align:center;
+	padding:20px;
+}
+.links {
+	display:block;
+}
+/* centered footer images */
+#subImages, #twoImages, #threeImages, #fourImages {
+	text-align:center;
+	margin:5px auto;
+}
+#threeImages h3 { padding-top:0; margin-top:0; }
+#twoImages {
+	width:420px;
+}
+#threeImages {
+	width:630px;
+}
+#fourImages {
+	width:800px;
+	text-align:center;
+}
+.subImage  {
+	float:left;
+	display:inline;
+	padding:5px;
+	font-size:0.8em;
+	color:#FFF;
+	margin:0px auto;
+	text-align:center;
+	width:200px;
+}
+.subImage5  {
+	float:left;
+	display:inline;
+	padding:5px;
+	font-size:0.8em;
+	color:#FFF;
+	margin:0px auto;
+	text-align:center;
+	width:180px;
+}
+#fourImages .subImage  {
+	width:190px !important;
+}
+.subImage a:link, .subImage a:visited, .subImage a:hover, .subImage a:active { 
+	text-decoration:none;
+}
+.subImage a:link {
+
+}
+.subImage a:hover {
+
+}
+.subImage IMG {
+	text-align:center;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.columns .center img,
+#centerImage img {
+	margin: 1em 0;
+}
+/* end centered sub images */
+#logos {
+	padding-right:20px;
+}
+#logos IMG {
+	float:right;
+	padding-left:5px;
+}
+/* bottomNav && footer */
+#footer, #bottomNav {
+	clear:both;
+	padding:10px;
+	margin-top:40px;
+	text-align:center;
+	font-size:0.9em;
+}
+
+#footer {
+	font-size:0.7em;
+}
+#bottomNav a:link, #topNav a:link, #bottomNav a:visited, #topNav a:visited, #bottomNav a:hover, #topNav a:hover, #bottomNav a:active, #topNav a:active { 
+	text-decoration:none;
+}
+/* end footer styles */
+
+/* form stuff - see http://www.websiteoptimization.com/speed/tweak/forms/ */
+
+form { 
+	padding-top: 25px;
+}
+label {
+	color: white;
+}
+select {
+	/*width: 200px;*/
+	text-align: left;	
+}
+
+fieldset { 
+	padding : 10px;
+	margin: 0;
+	border: none;
+} 
+fieldset legend {
+	background:  inherit;
+}
+form br {
+	clear: left;
+}
+
+
+textarea { 
+	overflow: auto; 
+
+}
+input {
+	margin: 0.5em 0.5em 0.5em 0;
+	padding: 0.5em;
+
+}
+input:focus {
+	background: #CCC;
+}
+textarea:focus {
+	background: #CCC;
+}
+/* end form stuff */
+
+#frontPage {
+	height:500px;
+	color:#FFF;
+}
+#frontPage IMG.leftalign {
+	text-align:left;
+	display:block;
+	margin-left:22px;
+}
+.fpLinks {
+/* links row */
+	display:block;
+	margin:2px auto;
+	width:900px;
+}
+.fpNav { 
+/* individual link icon */
+	float:left;
+	display:block;
+	font-size:0.8em;
+	color:#FFF;
+	width:110px;
+}
+.fpNav a:link {
+	background-color:#6D6D6D;
+}
+.fpNav a:hover {
+	background-color:#CCCCCC;
+}
+#printable {
+	display:none;
+}
