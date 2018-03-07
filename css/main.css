@@ -256,7 +256,7 @@ b, strong, em {
 
 .columns .center img,
 #centerImage img {
-	margin: 1em 0;
+	/*margin: 1em 0; */
 }
 /* end centered sub images */
 #logos {
@@ -339,15 +339,15 @@ textarea:focus {
 /* links row */
 	display:block;
 	margin:2px auto;
-	width:900px;
+	/*width:900px;*/
 }
 .fpNav { 
 /* individual link icon */
-	float:left;
-	display:block;
+	/*float:left;
+	display:block;*/
 	font-size:0.8em;
-	color:#FFF;
-	width:110px;
+	/*color:#FFF;
+	width:110px;*/
 }
 .fpNav a:link {
 	background-color:#6D6D6D;
@@ -357,4 +357,12 @@ textarea:focus {
 }
 #printable {
 	display:none;
+}
+
+/* expand on Foundatino grid for 8 in a row */
+.medium-1-5 {
+    width: 12.5%; 
+}
+.large-1-5 {
+    width: 12.5%; 
 }
