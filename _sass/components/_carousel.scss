@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// This file contains styles for the carousel
+// -----------------------------------------------------------------------------
+
+/// CAPTION
+.flex-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+  padding: 1em;
+  background: rgba($action-color,0.8);
+  color: $white;
+  font-size: large;
+  a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

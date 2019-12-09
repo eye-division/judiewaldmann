@@ -1,0 +1,85 @@
+- title: "home"
+  href: "/"
+- title: "community commissioned"
+  href: "/community-commissioned/"
+  subcategories:
+    - subtitle: "Intergenerational Arts Group"
+      href: /community-commissioned/intergenerational-arts-group/
+    - subtitle: "Young Dementia UK Garden Party"
+      href: /community-commissioned/young-dementia-uk/
+    - subtitle: "Turtle Song"
+      href: /community-commissioned/turtle-song/
+    - subtitle: "Waving Hello"
+      href: /community-commissioned/waving-hello/
+    - subtitle: "Beat It Percussion"
+      href: /community-commissioned/beat-it-percussion/
+    - subtitle: "Artscape"
+      href: /community-commissioned/artscape/
+    - subtitle: "Oxford Concert Party"
+      href: /community-commissioned/oxford-concert-party/
+    - subtitle: "Seesaw"
+      href: /community-commissioned/seesaw/
+    - subtitle: "St Michael&rsquo;s and All Angels Church"
+      href: /community-commissioned/st-michaels-and-all-angels/
+    - subtitle: "Creative Partnerships with Longmeadow School"
+      href: /community-commissioned/creative-partnerships/
+    - subtitle: "Transforming Spaces"
+      href: /community-commissioned/transforming-spaces/
+    - subtitle: "Voices from the Falling Sky"
+      href: /community-commissioned/voices-from-the-falling-sky/
+- title: "personal"
+  href: "/personal/"
+  subcategories:
+    - subtitle: "absence and presence"
+      href: /personal/absence-and-presence/
+    - subtitle: "mist of understanding"
+      href: /personal/mist-of-understanding/
+    - subtitle: "where the mood takes you"
+      href: /personal/where-the-mood-takes-you/
+    - subtitle: "within reach"
+      href: /personal/within-reach/
+    - subtitle: "between spaces ...spaces between"
+      href: /personal/between-spaces-spaces-between/
+    - subtitle: "Response to Transition"
+      href: /personal/response-to-transition/
+    - subtitle: "In-between spaces"
+      href: /personal/in-between-spaces/
+    - subtitle: "...shared disparities..."
+      href: /personal/shared-disparities/
+    - subtitle: "Neither Here nor There"
+      href: /personal/neither-here-nor-there/
+- title: "dance"
+  href: "/dance/"
+  subcategories:
+    - subtitle: "Dance Creative"
+      href: /dance/dance-creative/
+    - subtitle: "Remarkable Dance Company"
+      href: /dance/remarkable-dance-company/
+    - subtitle: "Anjali Dance Company"
+      href: /dance/anjali-dance-company/
+    - subtitle: "DEC Project Oxford"
+      href: /dance/dec-project-oxford/
+    - subtitle: "Cecilia Macfarlane Intergenerational Dancers"
+      href: /dance/cecilia-macfarlane-intergenerational-dancers/
+    - subtitle: "Various dancers"
+      href: /dance/various-dancers/
+- title: "theatre"
+  href: "/theatre/"
+  subcategories:
+    - subtitle: ""
+      href: /theatre/
+    - subtitle: ""
+      href: /theatre/
+- title: "music"
+  href: "/music/"
+  subcategories:
+    - subtitle: "Oxford Concert Party"
+      href: /music/oxford-concert-party/
+    - subtitle: "Kairos 4tet and SYO"
+      href: /music/kairos-4tet-syo/
+- title: "portraits"
+  href: "/portraits/"
+- title: "links"
+  href: "/links/"
+- title: "contact"
+  href: "/contact/"

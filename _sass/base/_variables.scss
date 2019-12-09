@@ -1,0 +1,156 @@
+// Google Fonts
+//@import url(//fonts.googleapis.com/css?family=Roboto+Condensed|Lato:300,400);
+
+// Typography
+// $base-font-family: $font-stack-system;
+$base-font-family: "Century Gothic", "Verdana", "Helvetica", "Arial", sans-serif;
+// OR use ? $font-stack-system;
+$heading-font-family: ("Century Gothic", "Verdana", 'Helvetica Neue', 'Helvetica',  'Arial', sans-serif);
+$subheading-font-family: ("Century Gothic", "Verdana", 'Helvetica Neue', 'Helvetica',  'Arial', sans-serif);
+$site-title-font-family: $heading-font-family;
+$logo-font-family: $heading-font-family;
+
+// Line height
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+$base-font-size: 1.25em; //16px
+
+$base-spacing: 1.5em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+/// Colors
+$black: rgb(17, 17, 17);
+
+$white: rgb(255, 255, 255);
+$kbgray: rgb(229, 229, 229);
+// Flat UI Colors. For more, see http://flatuicolors.com/
+$turquoise: rgb(26, 188, 156);  // Turqoise
+$green: rgb(39, 174, 96);     // Nephritis
+$blue: rgb(41, 128, 185);       // Belize Hole
+$purple: rgb(142, 68, 173);     // Wisteria
+$orange: rgb(211, 84, 0);     // Pumpkin
+$red: rgb(192, 57, 43);       // Pomegranate
+$gray: rgb(127, 140, 141);        // Asbestos
+$dark-gray: rgb(51, 51, 51) !default;
+$medium-gray: rgb(153, 153, 153);
+$light-gray: rgb(237, 237, 237);
+
+// Social Media Brand Colors */
+$twitter: rgb(0, 172, 237);
+$facebook: rgb(59, 89, 152);
+$googleplus: rgb(221, 75, 57);
+$pinterest: rgb(203, 32, 39);
+$linkedin: rgb(0, 123, 182);
+$youtube: rgb(187, 0, 0);
+$vimeo: rgb(26, 183, 234);
+$tumblr: rgb(50, 80, 109);
+$instagram: rgb(188, 42, 141);
+$flickr: rgb(255, 0, 132);
+$dribbble: rgb(234, 76, 137);
+$quora: rgb(168, 36, 0);
+$foursquare: rgb(0, 114, 177);
+$forrst: rgb(91, 154, 104);
+$vk: rgb(69, 102, 142);
+$wordpress: rgb(33, 117, 155);
+$stumbleupon: rgb(235, 72, 35);
+$yahoo: rgb(123, 0, 153);
+$blogger: rgb(251, 143, 61);
+$soundcloud: rgb(255, 58, 0);
+
+// Accessible link colours
+$aaa-link: rgb(204, 204, 153);
+$aaa-hover: rgb(255, 153, 51);
+$aaa-visited: rgb(204, 204, 204);
+
+// Font Colors
+$judie-color: rgb(109, 109, 109);
+$base-font-color: $white;
+$action-color: #CC9;
+$action-hover-color: $aaa-hover;
+
+$cta-color: darken($orange,0%);
+
+// Border
+$base-border-color: $light-gray;
+$base-border-radius: 3px !default;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$viewport-background-color: $judie-color;
+$base-background-color: $judie-color;
+$page-background-color: $judie-color;
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+// lightbox colours
+$lightbox-background: rgba($black, 0.8);
+$lightbox-color: $white;
+
+// OLD THINGS to be removed
+
+$highlight-color: tint($action-color, 33%);
+
+// Gallery image hover
+$gallery-image-hover-opacity: 0.7;
+$gallery-image-hover-color: $medium-gray;
+
+// navigation
+$navigation-padding: 1em;
+$navigation-height: 30px;
+$navigation-submenu-padding: 1em;
+$navigation-submenu-width: 15em;
+
+$navigation-background: $judie-color;
+$navigation-color: $white;
+$navigation-color-hover: $orange;
+$navigation-active-link-color: $orange;
+
+// footer
+$footer-background: $judie-color;
+$footer-color: $white;
+$footer-color-hover: $action-hover-color;
+$footer-active-link-color: $action-color;
+
+// drop down variables
+$dropdown-color: $base-font-color;
+$dropdown-description-color: lighten($dropdown-color, 40%);
+$dropdown-border: 1px solid silver;
+$dropdown-background: $base-background-color;
+$dropdown-background-hover: darken($dropdown-background, 3%);
+$dropdown-inner-border: 1px solid silver;
+$dropdown-height: 40px;
+$dropdown-padding: 1em;
+$dropdown-distance-from-menu: 50px;
+$dropdown-arrow-top-distance: 0;
+
+/// Forms
+$form-box-shadow: inset 0 1px 3px rgba(rgb(0, 0, 0), 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+/* _layout overrides */
+
+// Neat 2 grid
+$neat-grid: (
+  columns: 4,
+  gutter: 10px,
+);
+
+$small: (
+  columns: 4,
+  gutter: 10px,
+  media: 488px,
+);
+$large: (
+  columns: 4,
+  gutter: 10px,
+  media: 960px,
+);
