@@ -5,10 +5,10 @@ main_image_caption:
 show_carousel: true
 carousel:
   - image: /assets/images/slide_commissioned.jpg
-    caption: "A test caption"
+    caption:
     alink: /community-commissioned/
   - image: /assets/images/slide_personal.jpg
-    caption: "A test caption"
+    caption:
     alink: /personal/
   - image: /assets/images/slide_dance.jpg
     caption:
@@ -90,61 +90,29 @@ _comments:
     </section>
     {% endif %}
 
-    <!-- Regular page promotions on front page -->
-    {% for section in site.pages %}
+      <div class="gallery--list centered large-12 columns">
 
-    {% if section.frontpage %}
 
-      {% if section.main_image_path %}
-        <section class="gallery--cover has--cover" style="background-image: url({{ section.main_image_path }});">
-      {% else %}
-        <section class="gallery--cover has--cover" style="background-image: url('https://placekitten.com/g/1200/300');">
-      {% endif %}
 
-        <a href="{{ section.url | prepend: site.baseurl }}">
+      <div class="fpNav center small-6 large-1-5 columns"><a href="community-commissioned/"><img src="images/home_commissiioned.jpg"  alt="community commissioned photography" /></a><br />community<br />commissioned<br />projects</div>
 
-          <div class="scrim has--cover">
-            <article class="gallery--front">
-              <header class="gallery--header">
-                <h2 class="cover--title mb0">{{ section.frontpagetitle }}</h2>
-              </header>
-              {% if section.homepage_description_markdown %}
-                {{ section.homepage_description_markdown | markdownify }}
-                <span class="post--readmore">Read more <span> <svg class="icon icon--post"><use xlink:href="#icon-double_angle_right" /></svg></span>
 
-              {% endif %}
-          </span>
-        </article>
-        </div>
-        </a>
-      </section>
 
-    {% endif %}
+      <div class="fpNav center small-6 large-1-5 columns"><a href="personal/"><img src="images/home_personal.jpg"  alt="personal projects" /></a><br />personal<br />projects</div>
 
-  {% endfor %}
+      <div class="fpNav center small-6 large-1-5 columns"><a href="dance/"><img src="images/home_dance.jpg"  alt="dance photography" /></a><br />dance</div>
 
-   <!-- Galleries -->
-  {% for gallery in site.gallery %}
 
-    {% if gallery.frontpage %}
+      <div class="fpNav center small-6 large-1-5 columns"><a href="theatre/"><img src="images/home_theatre.jpg"  alt="theatre photography" /></a><br />theatre</div>
 
-      <section class="gallery--cover {% if gallery.main_image_path %}has--cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
+      <div class="fpNav center small-6 large-1-5 columns"><a href="music/"><img src="images/home_music.jpg" alt="music photography" /></a><br />music</div>
 
-        <a href="{{ gallery.url }}">
 
-          <div class="scrim {% if gallery.main_image_path %}has--cover{% endif %}">
-            <article class="gallery--front">
-              <header class="gallery--header">
-                <h2 class="cover--title mb0">{{ gallery.title }}</h2>
-              </header>
-              {% if gallery.homepage_description_markdown %}
-                {{ gallery.homepage_description_markdown | markdownify }} <span class="post--readmore">View gallery  <svg class="icon icon--post"><use xlink:href="#icon-double_angle_right" /></svg></span>
-              {% endif %}
-            </article>
-          </div>
-        </a>
-      </section>
+      <div class="fpNav center small-6 large-1-5 columns"><a href="portraits/"><img src="images/home_portraits.jpg" alt="portrait photography" /></a><br />portraits</div>
 
-    {% endif %}
+      <div class="fpNav center small-6 large-1-5 columns end"><a href="links/"><img src="images/home_links.jpg" alt="links" /></a><br />links</div>
 
-  {% endfor %}
+       <div class="fpNav center small-6 large-1-5 columns"><a href="contact/"><img src="images/home_intro.jpg"  alt="contact" /></a><br />contact</div>
+
+    </div><!-- end fpLinks -->
+
