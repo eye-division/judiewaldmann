@@ -1,6 +1,11 @@
 /// CUSTOM THEME
 .slideshow {
-  margin-bottom: 2em;
+  // hide on mobile
+  display: none;
+  @include grid-media ($small) {
+    margin-bottom: 2em;
+    display: inherit;
+  }
 }
 .flexslider {
   margin: 0;
