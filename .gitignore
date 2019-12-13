@@ -1,6 +1,22 @@
-_site/
-.sass-cache/
+
 .jekyll-cache/
 .jekyll-metadata
-.DS_Store
+
 Thumbs.db
+
+.DS_Store
+
+# Compiled site
+_site
+
+# Sass garbage
+.sass-cache
+
+# Bundler
+Gemfile.lock
+.bundle/
+vendor/
+nbproject
+
+# Need to allow our SASS vendor folder
+!_sass/vendor/

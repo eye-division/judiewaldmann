@@ -1,0 +1,61 @@
+---
+layout: default
+---
+<div class="page">
+
+  {% if page.title %}
+    <header class="page--header">
+      <h1 class="page--title">{{ page.title }}</h1>
+    </header>
+  {% endif %}
+
+  {{ content }}
+
+
+  {% if page.images[0].image_path %}
+
+    <section class="gallery--list">
+
+      {% for thisimage in page.images %}
+
+        {% assign image = site.default_gallery_image %}
+        {% if thisimage.image_path %}
+          {% assign image = thisimage.image_path %}
+        {% endif %}
+
+          <div class="gallery--box">
+
+            <a href="{% include imgpath.html src=image max-w=1280 %}" class="gallery--link" data-lightbox="gallery" data-title="{{ thisimage.image_title }} - {{ thisimage.image_description_markdown | markdownify }}">
+
+              {% if page.thumb_crop %}
+
+                <!-- cropped square images -->
+                {% include img.html src=image width=200 height=200 fit=crop alt=thisimage.image_title %}
+                <!-- end cropped square -->
+
+              {% else %}
+
+                <!-- full format images -->
+                {% include img.html src=image width=600 fit=clip alt=thisimage.image_title %}
+                 <!-- end format images -->
+               {% endif %}
+
+               {% if page.display_title %}
+                  <figcaption class="gallery--caption">{{ thisimage.image_title }}</figcaption>
+              {% endif %}
+
+            </a>
+
+
+
+          </div>
+
+
+      {% endfor %}
+
+    </section>
+
+    {% endif %}
+
+</div>
+
