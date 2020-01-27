@@ -2,9 +2,13 @@
 .slideshow {
   // hide on mobile
   display: none;
-  @include grid-media ($small) {
+  @include grid-media ($small) { // 488px
     margin-bottom: 2em;
     display: inherit;
+    max-width: 800px;
+  }
+  @include grid-media ($xlarge) { // 960px
+    max-width: none;
   }
 }
 .flexslider {
