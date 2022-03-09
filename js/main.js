@@ -17,13 +17,6 @@
       });
     });
 
-    // Lightbox2 options
-    lightbox.option({
-      'wrapAround': true
-    });
-
-    // fitvid on embed
-    $('.media').fitVids();
 
     // flexslider
     $('.flexslider').flexslider({

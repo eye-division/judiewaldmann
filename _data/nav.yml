@@ -1,5 +1,26 @@
 - title: "home"
   href: "/"
+- title: "personal"
+  href: "/personal/"
+  subcategories:
+    - subtitle: "absence and presence"
+      href: /personal/absence-and-presence/
+    - subtitle: "mist of understanding"
+      href: /personal/mist-of-understanding/
+    - subtitle: "where the mood takes you"
+      href: /personal/where-the-mood-takes-you/
+    - subtitle: "within reach"
+      href: /personal/within-reach/
+    - subtitle: "between spaces ...spaces between"
+      href: /personal/between-spaces-spaces-between/
+    - subtitle: "Response to Transition"
+      href: /personal/response-to-transition/
+    - subtitle: "In-between spaces"
+      href: /personal/in-between-spaces/
+    - subtitle: "...shared disparities..."
+      href: /personal/shared-disparities/
+    - subtitle: "Neither Here nor There"
+      href: /personal/neither-here-nor-there/
 - title: "community commissioned"
   href: "/community-commissioned/"
   subcategories:
@@ -27,27 +48,6 @@
       href: /community-commissioned/transforming-spaces/
     - subtitle: "Voices from the Falling Sky"
       href: /community-commissioned/voices-from-the-falling-sky/
-- title: "personal"
-  href: "/personal/"
-  subcategories:
-    - subtitle: "absence and presence"
-      href: /personal/absence-and-presence/
-    - subtitle: "mist of understanding"
-      href: /personal/mist-of-understanding/
-    - subtitle: "where the mood takes you"
-      href: /personal/where-the-mood-takes-you/
-    - subtitle: "within reach"
-      href: /personal/within-reach/
-    - subtitle: "between spaces ...spaces between"
-      href: /personal/between-spaces-spaces-between/
-    - subtitle: "Response to Transition"
-      href: /personal/response-to-transition/
-    - subtitle: "In-between spaces"
-      href: /personal/in-between-spaces/
-    - subtitle: "...shared disparities..."
-      href: /personal/shared-disparities/
-    - subtitle: "Neither Here nor There"
-      href: /personal/neither-here-nor-there/
 - title: "dance"
   href: "/dance/"
   subcategories:
