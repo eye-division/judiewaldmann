@@ -14,12 +14,12 @@
 }
 
 .page {
-   padding: 0 1em 1em;
-   max-width: 56em;
-   margin: 0 auto;
-   display: grid;
-   justify-items: center;
-   text-align: center;
+  padding: 0 1em 1em;
+  max-width: 56em;
+  margin: 0 auto;
+  display: grid;
+  //justify-items: center;
+  text-align: center;
   @include grid-media ($small) {
     padding: 1em;
   }
