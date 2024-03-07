@@ -24,13 +24,4 @@
   </div>
 
 </footer>
-
-<!-- Scripts -->
-{% if site.recaptcha_site_key and jekyll.environment == 'production' %}
-<script src="//www.google.com/recaptcha/api.js" async defer></script>
-{% endif %}
-
-<script src="/js/jquery.flexslider-min.js" defer></script>
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="/js/main.js"></script>
+{% include footer-scripts.html %}

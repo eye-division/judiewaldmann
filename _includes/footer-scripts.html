@@ -1,0 +1,48 @@
+<!-- footer scripts -->
+{% if jekyll.environment == "production" and page.show_captcha %}
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LeGW5ApAAAAAGkw-c4wlHy8YzUUS3DTjYXkTlKP"></script>
+<script>
+  var submitted = false;
+  var tokenCreated = false;
+  var formEl = document.getElementById('jw-form');
+
+  formEl.addEventListener("submit", function (event) {
+
+    // Check if the recaptcha exists
+    if (!tokenCreated) {
+
+      // Prevent submission
+      event.preventDefault();
+
+      // Prevent more than one submission
+      if (!submitted) {
+        submitted = true;
+        // needs for recaptacha ready
+        grecaptcha.ready(function() {
+          // do request for recaptcha token
+          // response is promise with passed token
+          grecaptcha.execute('6LeGW5ApAAAAAGkw-c4wlHy8YzUUS3DTjYXkTlKP', {action: 'create_comment'}).then(function (token) {
+            // add token to form
+            var input = document.createElement("input");
+            input.type = "hidden";
+            input.name = "g-recaptcha-response";
+            input.value = token;
+            formEl.appendChild(input);
+
+            // resubmit the form
+            tokenCreated = true;
+            formEl.submit();
+          });
+        });
+      }
+    }
+  });
+</script>
+{% endif %}
+
+
+<script src="/js/jquery.flexslider-min.js" defer></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="/js/main.js"></script>
