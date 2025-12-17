@@ -1,0 +1,148 @@
+source: ''
+paths:
+  static: ''
+  uploads: uploads
+  uploads_use_relative_path: false
+  dam_uploads: ''
+  dam_static: ''
+  data: _data
+  collections: ''
+  layouts: _layouts
+collections_config:
+  data:
+    path: _data
+    output: false
+    auto_discovered: true
+  posts:
+    auto_discovered: true
+    path: _posts
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+    create:
+      path: >-
+        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
+  pages:
+    path: ''
+    output: true
+    filter: strict
+    auto_discovered: true
+  gallery:
+    output: true
+    permalink: /gallery/:path/
+    _hide_content: true
+    auto_discovered: true
+    path: _gallery
+  drafts:
+    auto_discovered: true
+    path: _drafts
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+    create:
+      publish_to: posts
+    name: Drafts
+    icon: event
+    singular_name: Draft
+collection_groups:
+_enabled_editors:
+_inputs:
+  categories:
+    type: multiselect
+    options:
+      allow_create: true
+  tags:
+    type: multiselect
+    options:
+      allow_create: true
+  _text:
+    type: text
+    options:
+      link: true
+      bold: true
+      italic: true
+      removeformat: true
+  _block:
+    type: text
+    options:
+      link: true
+      bold: true
+      italic: true
+      removeformat: true
+      left: align-left
+      center: center-this-text
+      right: align-right
+      justify: full-width-text
+      undo: true
+      redo: true
+      format: p h2 h3 h4 h5 h6 div
+      numberedlist: true
+      bulletedlist: true
+      blockquote: true
+      image: true
+      styles: /css/editor.scss
+  content:
+    type: text
+    options:
+      link: true
+      bold: true
+      italic: true
+      removeformat: true
+      left: align-left
+      center: center-this-text
+      right: align-right
+      justify: full-width-text
+      undo: true
+      redo: true
+      format: p h2 h3 h4 h5 h6 div
+      numberedlist: true
+      bulletedlist: true
+      blockquote: true
+      image: true
+      styles: /css/editor.scss
+_select_data:
+  imagecdn:
+    staging: https://ed-judiewaldmann-dev.imgix.net
+    production: https://ed-judiewaldmann.imgix.net
+  social:
+    - name: Facebook
+      icon: icon-facebook_sign
+      username:
+      url:
+      desc: Like us on Facebook
+      share: true
+    - name: Instagram
+      icon: icon-white icon-large
+      username: judiephotolight
+      url: https://www.instagram.com/judiephotolight/
+      desc: Follow me on Instagram
+      share: false
+    - name: Twitter
+      icon: icon-twitter_sign
+      username:
+      url:
+      desc: Follow us on Twitter
+      share: true
+    - name: Pinterest
+      icon: icon-pinterest
+      username:
+      url:
+      desc: Follow us on Pinterest
+      share: true
+    - name: linkedin
+      icon: icon-linkedin_sign
+      username:
+      url:
+      desc: Connect with us on LinkedIn
+      share: true
+  protocols:
+    fb_image: /assets/logo.png
+    fb_image_width: 612
+    fb_image_height: 605
+    fb_image_type: image/png
+    twitter_image: /assets/logo.png
+_structures: {}
+_editables: {}
+commit_templates: []
+base_url: ''
+editor:
+source_editor:
+timezone: Etc/UTC
